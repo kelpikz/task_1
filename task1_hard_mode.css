@@ -1,0 +1,204 @@
+body {
+    background-color: black;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: lightcoral;
+    box-sizing: border-box;
+    margin-left: 80px;
+    margin-right: 80px;
+    user-select: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+    margin: 8px 2px;
+    background-color: mediumorchid;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 48px;
+}
+#everything {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#flexbox {
+    flex : 17%;
+    padding-top: 50px;
+    background-color: hotpink;
+    align-items: flex-start;
+    border-radius: 6.9px;
+    margin-right: 5px;
+}
+
+#main_menu  {
+    width: 100%;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.menu_items {
+    font-size: 24px;
+    background-color: rgb(46, 224, 215);
+    color: black;
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.menu_items:hover {
+    background-color:rgb(28, 166, 147);
+}
+
+#body {
+    flex : 65%;
+    margin: auto;
+    background-color: skyblue;
+    /* margin-left: 25%; */
+    justify-content: center;  
+    /* margin-right: 18%; */
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.time div {
+    float: right;
+    padding: 0px 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+#heading div{
+    clear: right;
+    float: left;
+    width: 50%;   
+    font-size: 27px;
+    box-sizing: border-box;
+}
+div #instructions   {
+    text-align: center;
+    padding-left: 25px;
+    /* margin-top: 20px; */
+}
+
+div #new_game   {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#cover {
+    height: 43.5vw;
+    width: 42%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#game {
+    margin: auto;
+    height: 100%;
+    width: 75%;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 1.6vw;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 52px;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#game p{
+    float: left;
+    margin: 5px;
+    height: 6vw;
+    width: 14%;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game p :hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width:900px) {
+
+    body {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #everything {
+        flex: 100%;
+        flex-direction: column;
+        align-content: center;    
+        justify-content: center;
+    }
+
+    #flexbox {
+        flex : 100%;
+        padding-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    #main_menu  {
+        padding-top: 2px;
+        position: relative;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    .menu_items {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+
+    #body {
+        flex: 100%;
+    }
+    
+    #cover {
+        height: 64vw;
+        width: 85%;
+    }
+
+    #game {
+
+        height: 100%;
+        width: 90%;
+        padding: 1.6vw;
+        font-size: 7vw
+
+    }
+
+    #game p{
+        height: 9vw;
+    }
+
+}

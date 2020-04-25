@@ -1,0 +1,307 @@
+@keyframes slide {
+    0% { left: -22%;}
+    100% {left: 100%;}
+}
+
+body {
+    background-color: black;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: lightcoral;
+    box-sizing: border-box;
+    user-select: none;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+    margin: 8px 2px;
+    background-color: mediumorchid;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 48px;
+    
+}
+
+#everything {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#flexbox {
+    flex : 17%;
+    padding-top: 50px;
+    background-color: hotpink;
+    align-items: flex-start;
+    border-radius: 6.9px;
+    margin-right: 5px;
+}
+
+#main_menu  {
+    width: 100%;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.menu_items {
+    font-size: 24px;
+    background-color: rgb(46, 224, 215);
+    color: black;
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+#body {
+    flex : 65%;
+    margin: auto;
+    background-color: skyblue;
+    /* margin-left: 25%; */
+    /* justify-content: center;   */
+    /* margin-right: 18%; */
+    padding-bottom: 60px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.menu_items:hover {
+    background-color:rgb(28, 166, 147);
+}
+
+.time div {
+    float: right;
+    padding: 0px 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.time div p {
+    margin-top: 9px;
+    font: bold;
+}
+
+#heading div{
+    clear: right;
+    float: left;
+    width: 50%;   
+    font-size: 27px;
+    box-sizing: border-box;
+}
+div #instructions   {
+    text-align: center;
+    padding-left: 25px;
+    /* margin-top: 20px; */
+}
+
+div #new_game   {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#new_game {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#cover {
+    height: 490px;
+    width: 100%;
+    /* right: -1%; */
+    background-color: springgreen;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 3;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ________________________________________________________ */
+
+.left_main_bar  {
+    clear: both;
+    flex: 65%;
+    display: flex;
+    flex-direction: row;
+    height: 500PX;
+}
+
+.cover_part_up  {
+    flex: 5%;
+    background-color: skyblue;
+    border-radius: 8px;
+    margin: 2px 0px;
+    z-index: 2;
+}
+
+.cover_main {
+    flex: 50%;
+    position: relative;
+    border-radius: 8px;
+    margin: 10px 0px;
+    z-index: 0;
+}
+
+.boxes1 , .boxes2 , .boxes3 , .boxes4, .boxes5   {
+    position: absolute;
+    color: yellow;
+    font-size: 3rem;
+    background-color:  rgb(1, 111, 255);
+    margin: 0% 2%;
+    width: 20%;   
+    height: 18%;
+    left: -22%;
+    top: 5px;
+    z-index: 1;
+    border: 2px blue solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes2   {
+    top: 21%;
+}
+.boxes3   {   
+    top: 41%;
+}
+.boxes4   {   
+    top: 61.5%;
+}
+.boxes5   {
+    top: 82%;
+}
+
+
+
+
+.box_1  {     animation: slide 4s linear 0.8s infinite  normal;}
+.box_2  {     animation: slide 4s linear 1.6s infinite  normal;}
+.box_3  {     animation: slide 4s linear 2.4s infinite  normal;}
+.box_4  {     animation: slide 4s linear 3.2s infinite  normal;}
+.box_5  {     animation: slide 4s linear 4.0s infinite  normal;}
+
+.box_6  {     animation: slide 4.5s linear 0.9s infinite  reverse;}
+.box_7  {     animation: slide 4.5s linear 1.8s infinite  reverse;}
+.box_8  {     animation: slide 4.5s linear 2.7s infinite  reverse;}
+.box_9  {     animation: slide 4.5s linear 3.6s infinite  reverse;}
+.box_10 {     animation: slide 4.5s linear 4.5s infinite  reverse;}
+
+.box_11 {     animation: slide 6.5s linear 1.3s infinite  normal;}
+.box_12 {     animation: slide 6.5s linear 2.6s infinite  normal;}
+.box_13 {     animation: slide 6.5s linear 3.9s infinite  normal;}
+.box_14 {     animation: slide 6.5s linear 5.2s infinite  normal;}
+.box_15 {     animation: slide 6.5s linear 6.5s infinite  normal;}
+
+.box_16 {     animation: slide 3.5s linear 0.7s infinite  reverse;}
+.box_17 {     animation: slide 3.5s linear 1.4s infinite  reverse;}
+.box_18 {     animation: slide 3.5s linear 2.1s infinite  reverse;}
+.box_19 {     animation: slide 3.5s linear 2.8s infinite  reverse;}
+.box_20 {     animation: slide 3.5s linear 3.5s infinite  reverse;}
+
+.box_21 {     animation: slide 5s linear 0.5s infinite  normal;}
+.box_22 {     animation: slide 5s linear 1.5s infinite  normal;}
+.box_23 {     animation: slide 5s linear 2.5s infinite  normal;}
+.box_24 {     animation: slide 5s linear 3.5s infinite  normal;}
+.box_25 {     animation: slide 5s linear 4.5s infinite  normal;}
+
+@media screen and (max-width:900px) {
+    
+    body {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #everything {
+        flex: 100%;
+        flex-direction: column;
+        align-content: center;    
+        justify-content: center;
+    }
+    #flexbox {
+        flex : 100%;
+        padding-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    #main_menu  {
+        padding-top: 2px;
+        position: relative;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    .menu_items {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    #body {
+        flex : 100%;
+        width: 100%;
+    }
+
+    #heading div {
+        font-size: 20px;
+    }
+
+    #cover {
+        height: 300px;
+        font-size: 40px;
+    }
+
+    .left_main_bar  {
+        clear: both;
+        flex: 100%;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .cover_part_up  {
+        flex: 10%;
+        border-radius: 2px;
+        border: 0px;
+        height: 320px;
+    }
+    
+    .cover_main {
+        flex: 63%;
+        border-radius: 2px;
+    }
+
+    .boxes1   {
+        top: 2%
+    }
+
+    .boxes2   {
+        top: 22.5%
+    }
+
+    .boxes3   {
+        top: 44%
+    }
+
+    .boxes4   {
+        top: 65.5%;
+    }
+
+    .boxes5   {
+        top: 87%;
+    }
+}

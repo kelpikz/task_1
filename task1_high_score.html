@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>40 Shades Of Grey</title>
+  <link rel="stylesheet" href="task1_high_score.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>40 Shades Of Grey</h1>
+<div id = "everything">
+<div id="flexbox">
+    <div id = "main_menu">
+        <button class="menu_items easy" onclick= "document.location = 'task1(2).html'">Normal Mode</button>
+        <button class="menu_items normal" onclick= "document.location = 'task1_hard_mode.html'">Hacker Mode</button>
+        <button class="menu_items hacker++"  onclick= "document.location = 'task1_hacker++.html'">Hacker+++ Mode</button>
+        <button class="menu_items" style="cursor: not-allowed; background-color:rgb(28, 166, 147);"> Highscores</button>
+    </div>
+</div>
+<div id = "body">
+  <div id="modes">
+    <div onclick = "normal()">Normal Mode</div>
+    <div onclick="hard()">Hard Mode</div>
+    <div onclick="hacker()">Hacker++ Mode</div>
+  </div>
+  <table>
+        <thead>
+          <tr>
+            <th>POSITION</th>
+            <th>SCORE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td id="hs1"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td id="hs2"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td id="hs3"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td id="hs4"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td id="hs5"></td>
+          </tr>
+        </tbody>
+  </table>
+</div>
+<script src="task1_high_score.js"></script>
+</body>

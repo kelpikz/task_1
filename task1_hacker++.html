@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>40 Shades Of Grey</title>
+  <link rel="stylesheet" href="task1_hacker++.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>40 Shades Of Grey</h1>
+<div id = "everything">
+<div id="flexbox">
+    <div id = "main_menu">
+        <button class="menu_items easy" onclick= "document.location = 'task1(2).html'">Normal Mode</button>
+        <button class="menu_items normal" onclick= "document.location = 'task1_hard_mode.html'">Hacker Mode</button>
+        <button class="menu_items hacker++" style="cursor: not-allowed; background-color:rgb(28, 166, 147);">Hacker+++ Mode</button>
+        <button class="menu_items" onclick= "document.location = 'task1_high_score.html'"> Highscores</button>
+    </div>
+</div>
+<div id = "body">
+    <div class = "time">
+    <div id = 'your_timing'>
+        YOUR TIME <P>- - : - -</P>
+    </div>
+    <div id = "best_timing">
+        BEST TIME <P>- - : - -</P>
+    </div>
+</div>
+    <div id = "heading">    <!-- INSTRUCTIONS AND NEW GAME -->
+        <div id = "instructions">
+            Click <strong>the numbers</strong> as <br> quickly as possible
+        </div>
+        <div id = "new_game" onclick="newGame()">
+            <strong>New Game</strong>
+        </div>
+    </div>   
+    <div class = "left_main_bar">
+    <div class ="cover_part_up"></div>
+    <div class ="cover_main"> 
+        <div id="cover" onclick="gameStart()">Click To Start</div>  
+        <div class = "boxes1 box_1" onclick="clickMe(1)">1</div>
+        <div class = "boxes1 box_2" onclick="clickMe(2)">2</div>
+        <div class = "boxes1 box_3" onclick="clickMe(3)">3</div>
+        <div class = "boxes1 box_4" onclick="clickMe(4)">4</div>
+        <div class = "boxes1 box_5" onclick="clickMe(5)">5</div>  
+        <div class = "boxes2 box_6" onclick="clickMe(6)">6</div>
+        <div class = "boxes2 box_7" onclick="clickMe(7)">7</div>
+        <div class = "boxes2 box_8" onclick="clickMe(8)">8</div>
+        <div class = "boxes2 box_9" onclick="clickMe(9)">9</div>
+        <div class = "boxes2 box_10" onclick="clickMe(10)">10</div> 
+        <div class = "boxes3 box_11" onclick="clickMe(11)">11</div>
+        <div class = "boxes3 box_12" onclick="clickMe(12)">12</div>
+        <div class = "boxes3 box_13" onclick="clickMe(13)">13</div>
+        <div class = "boxes3 box_14" onclick="clickMe(14)">14</div>
+        <div class = "boxes3 box_15" onclick="clickMe(15)">15</div> 
+        <div class = "boxes4 box_16" onclick="clickMe(16)">16</div>
+        <div class = "boxes4 box_17" onclick="clickMe(17)">17</div>
+        <div class = "boxes4 box_18" onclick="clickMe(18)">18</div>
+        <div class = "boxes4 box_19" onclick="clickMe(19)">19</div>  
+        <div class = "boxes4 box_20" onclick="clickMe(20)">20</div> 
+        <div class = "boxes5 box_21" onclick="clickMe(21)">21</div>
+        <div class = "boxes5 box_22" onclick="clickMe(22)">22</div>
+        <div class = "boxes5 box_23" onclick="clickMe(23)">23</div>
+        <div class = "boxes5 box_24" onclick="clickMe(24)">24</div>
+        <div class = "boxes5 box_25" onclick="clickMe(25)">25</div> 
+    </div>
+    <div class ="cover_part_up"></div>
+</div>
+</div>
+</div>
+<script src="task1_hacker++.js"></script>
+</body>
