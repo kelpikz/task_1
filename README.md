@@ -1,2 +1,3 @@
 # task_1
-run runthisfirst.js first.
+run runthisfirst.html first.
+It initializes the highscore to a default value.
